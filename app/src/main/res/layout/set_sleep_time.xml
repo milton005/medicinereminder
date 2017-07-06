@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+
+    xmlns:card="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/popup_background"
+        android:alpha=".9"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal"
+        android:id="@+id/l1"
+        android:weightSum="2"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".5"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.5"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+
+
+                android:tint="@color/colorBlack"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+
+        android:orientation="vertical"
+        android:layout_below="@+id/l1"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Set Time"
+            android:id="@+id/SetTimePopuPHEad"
+            android:textColor="@color/colorWhite"
+            android:gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:elevation="4dp"-->
+
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--card:elevation="4dp"-->
+
+            <!--android:layout_height="wrap_content">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:weightSum="2"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:text="FRom"
+                    android:id="@+id/textSpinnner_set_sleep_time_from"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/rectangle_background"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+
+
+                    android:id="@+id/Spinnner_set_sleep_time_from">
+
+                    </Spinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/imagealarmclock1"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="10dp"
+
+                            android:src="@drawable/ic_alarmclock"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:text="to"
+                    android:id="@+id/textSpinnner_set_sleep_time_to"
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/rectangle_background"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+
+
+                            android:id="@+id/Spinnner_set_sleep_time_to"></Spinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/imagealarmclock2"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:paddingRight="10dp"
+
+                            android:src="@drawable/ic_alarmclock"/>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layout_Done_sleep"
+
+            android:background="@color/green_button"
+            android:layout_height="@dimen/EditTextHeight">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="DONE"/>
+
+        </RelativeLayout>
+
+        </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:elevation="4dp"-->
+
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--card:elevation="4dp"-->
+            <!--android:layout_marginBottom="50dp"-->
+
+            <!--android:layout_height="wrap_content">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:weightSum="2"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="to"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:textSize="17dp"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:textColor="@color/colorBlack"/>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+    <!--</LinearLayout>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/button_close_popup_set_sleep_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:src="@drawable/ic_action_close"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/menu_bg"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/menu_layout_home"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_home"
+                android:id="@+id/menu_image_home"
+
+                android:layout_height="60dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/menu_text_home"
+                    android:text="HOME"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="20dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/menu_layout_pill"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_pill_reminder"
+
+
+                android:layout_height="60dp"
+                android:id="@+id/menu_image_pill" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="bottom"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/menu_text_pill"
+
+                    android:text="PILL REMINDER"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/menu_layout_appointment"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_appointment"
+                android:id="@+id/menu_image_appointment"
+
+
+                android:layout_height="60dp"
+              />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/menu_text_appointment"
+
+                    android:text="APPOINTMENT"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="20dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/menu_layout_water"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:src="@drawable/ic_water_reminder"
+
+                android:layout_marginLeft="20dp"
+                android:layout_height="60dp"
+                android:id="@+id/menu_image_water" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:text="WATER REMINDER"
+                    android:id="@+id/menu_text_water"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="20dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/menu_layout_settings"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_settings"
+                android:scaleType="fitXY"
+                android:id="@+id/menu_image_settings"
+                android:layout_height="60dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/menu_text_settings"
+
+                    android:text="SETTINGS"
+                    android:textColor="@color/menu_text_color"
+                    android:textSize="20dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

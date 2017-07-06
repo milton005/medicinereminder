@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ReMinds</string>
+    <string name="have_an">Have an account</string>
+    <string name="login_now">CONNECT</string>
+    <string name="connect_fb">Connect With Facebook</string>
+    <string name="register_now">Register Now</string>
+    <string name="facebook_app_id">357268937968197</string>
+    <string name="title_activity_medicine_reminder">MedicineReminderActivity</string>
+    <string name="did_u_know">Do you know ?</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ideal_time">  Ideal Time for taking water is every 1.30 hours.</string>
+    <string name="ideal_night_brushing">Ideal Time for Night Brushing is 1 Hour Before Going to Bed</string>
+    <string name="action_settings">Settings</string>
+    <array name="tutorial_screens">
+        <item>@drawable/tut1</item>
+        <item>@drawable/tut2</item>
+        <item>@drawable/tut3</item>
+        <item>@drawable/tut4</item>
+        <!--<item>@drawable/bg2</item>-->
+        <!--<item>@drawable/image_tut_6</item>-->
+        <!--<item>@drawable/image_tut_8</item>-->
+        <!--<item>@drawable/image_tut_4</item>-->
+        <!--<item>@drawable/image_tut_9</item>-->
+        <!--<item>@drawable/image_tut_10</item>-->
+
+    </array>
+    <!--<string name="tips_par3">Boost your brain \n\nRelieves Your head ache\n\n-->
+        <!--Smooth your skin\n\nMore Energy-\n\nModulate blood pressure\n\nMetabolize FAT\n\nBetter DETOX\n\n-->
+        <!--Improve Your Mood\n\nBetter Physical Performance\n\nMore oxygen &amp; nutrients\n\n-->
+        <!--Better Digestion\n\nReduce Constipation\n\n Happier Joints and bones-->
+    <!--</string>-->
+    <!--<string name="tips_par2">75% of brain is water\n\n-->
+                        <!--regulates body temperature\n\n-->
+                        <!--83% of body’s blood is water\n\n-->
+                        <!--removes body waste-->
+                        <!--cushions bone, 75% of muscles are water\n\n-->
+                        <!--helps body absorb nutrients\n\n-->
+                        <!--protects and cushions vital organ\n\n-->
+                        <!--help convert food into energy\n\n-->
+                        <!--moistens oxygen for breathing\n\n-->
+                        <!--helps carries nutrients and oxygen to cells\n\n-->
+                        <!--helps to maintain normal kidney function</string>-->
+    <!--<string name="tips_par1">1.Drink two glasses of water after waking up – helps activate internal organs.\n\n2.Drink one glass of water 30 Minutes before meal – helps digestion\n\n3.Drink one glass of water before taking a bath – helps lower blood pressure\n\n4.Drink one glass of water before sleep – may help to avoid stroke or heart attack.</string>-->
+</resources>

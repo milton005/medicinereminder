@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    xmlns:card="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<FrameLayout-->
+            <!--android:id="@+id/layoutFrame"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="180dp"-->
+
+            <!--android:background="@android:color/transparent"-->
+            <!--android:gravity="center" >-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/im_cover_photo"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="centerCrop" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="12dp" >-->
+
+
+
+
+                <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/tv_user_name"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:drawableLeft="@drawable/edit_name"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:drawablePadding="@dimen/padding"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:drawableStart="@drawable/edit_name"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:hint="name"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:paddingTop="3dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@android:color/white"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textStyle="bold" />&ndash;&gt;-->
+            <!--</RelativeLayout>-->
+
+        <!--</FrameLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:elevation="1dp"
+
+
+                android:id="@+id/layout_changeapssword"
+
+                card:elevation="1dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@android:color/transparent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_password"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+
+                        android:id="@+id/imagepassword"
+
+                        android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="change password"
+                    android:layout_toRightOf="@+id/imagepassword"
+                    android:id="@+id/textView_change_password"
+                    android:textAllCaps="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="50dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:elevation="1dp"
+                android:layout_marginTop="1dp"
+
+                android:background="@color/grey"
+                android:id="@+id/layout_cancel_all_reminders"
+                card:elevation="1dp"
+                android:layout_below="@+id/layout_changeapssword"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/imagecancelReminder"
+                        android:src="@drawable/ic_cancel_reminder"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Cancel All Reminders"
+                        android:layout_toRightOf="@+id/imagecancelReminder"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:id="@+id/textViewCancelAllReminders"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_height="50dp" />
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="40dp"
+                        android:layout_toRightOf="@+id/textViewCancelAllReminders"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/switch_cancel_all"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:elevation="1dp"
+                android:layout_marginTop="1dp"
+
+                android:background="@color/grey"
+                card:elevation="1dp"
+                android:id="@+id/layout_Alarm_settings"
+                android:layout_below="@+id/layout_cancel_all_reminders"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_alarm"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+
+                        android:id="@+id/imagealarm"
+
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Alarm Settings"
+                        android:layout_toRightOf="@+id/imagealarm"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="15dp"
+                        android:id="@+id/textView_AlarmSettings"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_height="50dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:elevation="1dp"
+                android:layout_marginTop="1dp"
+
+                android:background="@color/grey"
+                card:elevation="1dp"
+                android:id="@+id/layout_delete_All_Reminders"
+                android:layout_below="@+id/layout_Alarm_settings"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_reset"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+
+                    android:id="@+id/imagereset"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="RESET"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/imagereset"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
+                    android:id="@+id/textView_Reset"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+
+
+                android:background="@color/grey"
+                android:layout_marginTop="1sp"
+
+                 android:id="@+id/layout_setsleeptime"
+                android:layout_below="@+id/layout_delete_All_Reminders"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_sleep_time"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+
+                        android:id="@+id/imagesleep"
+
+                        android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_toRightOf="@+id/imagesleep"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Set Sleep time"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:id="@+id/textView_Set_sleep_time"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_height="50dp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text=": Default"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/textView_Set_sleep_default"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_height="50dp" />
+
+                    </RelativeLayout>
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                     <!--android:layout_weight="1"-->
+                        <!--android:text=": Default"-->
+                        <!--android:id="@+id/textView_Set_sleep_default"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:textSize="17dp"-->
+                        <!---->
+                        <!--/>-->
+
+                </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="1dp"
+
+                android:background="@color/grey"
+
+                android:id="@+id/layout_help"
+                android:layout_below="@+id/layout_setsleeptime"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_reset"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+
+                        android:id="@+id/imagehelp"
+
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="HELP"
+                        android:layout_marginBottom="10dp"
+                        android:layout_toRightOf="@+id/imagehelp"
+                        android:textAllCaps="true"
+                        android:textSize="15dp"
+                        android:id="@+id/textView_help"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_height="50dp" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/layout_help"
+                android:paddingTop="2dp"
+                android:gravity="center"
+                 android:id="@+id/layout_logout"
+
+                 android:background="@color/register_blue"
+                android:layout_height="50dp">
+                <TextView
+                android:layout_width="wrap_content"
+                android:text="Logout"
+                android:textAllCaps="true"
+                android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView_Logout"
+
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="50dp" />
+            </LinearLayout>
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:elevation="4dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:background="@color/grey"-->
+                <!--card:elevation="4dp"-->
+                <!--android:id="@+id/layout_logout"-->
+
+                <!--android:layout_height="wrap_content">-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="Logout"-->
+                        <!--android:textAllCaps="true"-->
+                        <!--android:textSize="17dp"-->
+
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingLeft="10dp"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:layout_height="50dp" />-->
+
+                <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

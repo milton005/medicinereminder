@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+
+        android:layout_marginTop="3dp"
+        card_view:cardCornerRadius="3dp"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+        card_view:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:id="@+id/history_apointment_layout"
+                android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="Status"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/History_Statushead"
+
+                    android:textSize="18dp"
+                    android:textColor="@color/sub_text_black"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="90dp"
+
+                   android:layout_toRightOf="@+id/History_Statushead"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="35dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/expired_bg"
+
+                        android:layout_centerInParent="true"
+                        android:foregroundGravity="center"
+                        android:id="@+id/History_Statusimage"
+
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="expired"
+                        android:id="@+id/History_Status"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!---->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_below="@+id/History_Statushead"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:text="Description"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:id="@+id/History_Description"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:maxLines="2"-->
+                        <!--android:textStyle="italic"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</RelativeLayout>  -->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:textSize="18dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:textColor="@android:color/holo_red_dark"-->
+                    <!--android:id="@+id/AllAppointmentname"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:text="Appointment Name"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:text="10:58 pm"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:padding="10dp"-->
+
+                    <!--android:layout_marginRight="3dp"-->
+
+                    <!--android:layout_height="wrap_content" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="18_10 2016"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:gravity=""-->
+                <!--android:padding="10dp"-->
+
+                <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true" />-->
+
+            </RelativeLayout>
+                <RelativeLayout
+                android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+
+                android:layout_height="wrap_content">
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:text="Description"
+                        android:id="@+id/History_Description"
+                    android:textSize="16dp"
+                    android:maxLines="2"
+
+                    android:textColor="@color/sub_text_black"
+                    android:layout_height="wrap_content"
+                        />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="2"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Date"
+                            android:gravity="center"
+                            android:textColor="@color/sub_text_black"
+                            android:textSize="15dp"
+                            android:id="@+id/HIstoryCreatedDatehead"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/HIstoryCreatedDate"
+                            android:gravity="center"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="match_parent"
+                        android:background="@color/line_text_black"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:text="Time"
+                            android:gravity="center"
+                            android:textColor="@color/sub_text_black"
+                            android:textSize="15dp"
+                            android:id="@+id/HIstorytimeHead"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+
+                            android:textColor="@android:color/black"
+                            android:text="10:58 pm"
+                            android:textStyle="bold"
+                            android:id="@+id/HIstorytime"
+                            android:gravity="center"
+
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:id="@+id/history_Reminder_layout"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/History_StatusREMHEAD"
+
+                        android:textSize="18dp"
+                        android:textColor="@color/sub_text_black"
+                        android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                         android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="10:58pm"
+                            android:id="@+id/history_Reminder_time"
+                            android:textColor="@color/colorBlack"/>
+                    <RelativeLayout
+                        android:layout_width="90dp"
+                        android:layout_toRightOf="@+id/History_StatusREMHEAD"
+
+
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_height="35dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/expired_bg"
+
+                            android:layout_centerInParent="true"
+                            android:foregroundGravity="center"
+                            android:id="@+id/History_StatusREmHeadimage"
+
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="expired"
+                            android:id="@+id/History_StatusREM"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorWhite"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Description"
+                            android:id="@+id/History_REMDescription"
+                            android:textSize="16dp"
+                            android:maxLines="2"
+
+                            android:textColor="@color/sub_text_black"
+                            android:layout_height="wrap_content"
+                            />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/sub_text_black"
+                                android:layout_height="wrap_content"
+                                android:textSize="13dp"
+                                android:textAllCaps="true"
+                                android:id="@+id/history_Reminder_createdhead"
+                                android:text="Created Date"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="18_10 2016"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:paddingTop="2dp"
+                                android:id="@+id/history_Reminder_created"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="match_parent"
+                            android:background="@color/line_text_black"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textAllCaps="true"
+                                android:textSize="13dp"
+                                android:id="@+id/history_Reminder_expiryHead"
+
+                                android:textColor="@color/sub_text_black"
+                                android:text="Expiry Date"/>
+                            <TextView
+                                android:paddingTop="5dp"
+                                android:layout_width="match_parent"
+                                android:text="18_10 2016"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:id="@+id/history_Reminder_expiry"
+
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="match_parent"
+                            android:background="@color/line_text_black"
+                            />
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="13dp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/sub_text_black"
+                                android:id="@+id/History_IntervalHead"
+                                android:text="Interval"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:text="18_10 2016"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:paddingTop="2dp"
+                                android:id="@+id/History_Interval"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="3"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="Created date"-->
+                                <!--android:textColor="@color/colorBlack"/>-->
+
+
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="Expiry date"-->
+                                <!--android:textColor="@color/colorBlack"/>-->
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text="Time"-->
+                                <!--android:textColor="@color/colorBlack"/>-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:weightSum="3"-->
+                        <!--android:layout_height="wrap_content">-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text=""-->
+                                <!--android:id="@+id/history_Reminder_created"-->
+                                <!--android:textColor="@color/colorBlack"/>-->
+
+
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:gravity="center"-->
+                                <!--android:text=""-->
+                                <!--android:id="@+id/history_Reminder_expiry"-->
+                                <!--android:textColor="@color/colorBlack"/>-->
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="wrap_content">-->
+                            <!---->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:weightSum="3"-->
+            <!--android:orientation="horizontal">-->
+            <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="16dp"-->
+
+            <!--android:text="Created Date"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:text="18_10 2016"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:id="@+id/medicineremindercreated_date"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="16dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:text="Expiry Date"/>-->
+            <!--<TextView-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:text="18_10 2016"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/medicinereminderexpirydate"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="16dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:text="Interval"/>-->
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:text="18_10 2016"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:id="@+id/medicinereminderinterval"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+
+                <!--android:orientation="vertical">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                  <!---->
+                    <!--android:id="@+id/History_layout_interval"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="Interval"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_height="match_parent" />-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textColor="@color/colorBlack"-->
+                        <!--android:id="@+id/History_Interval"-->
+
+                        <!--android:layout_height="match_parent" />-->
+
+
+                <!--</LinearLayout>-->
+                <!---->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="2"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="ACTIVE"-->
+
+                        <!--android:textSize="18dp"-->
+                        <!--android:textColor="@color/colorGreen"-->
+                        <!--android:textAllCaps="true"-->
+                        <!--android:layout_height="wrap_content" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:weightSum="2"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:id="@+id/layout_MedicineRemindercompleted"-->
+            <!--android:background="@drawable/rectangle5"-->
+            <!--android:layout_height="40dp">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="Mark as Completed"-->
+            <!--android:textColor="@color/colorLightWhite"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical"-->
+
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:id="@+id/layout_MedicineReminderedit"-->
+            <!--android:background="@drawable/rectangle2"-->
+            <!--android:layout_height="40dp">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="Edit"-->
+            <!--android:textColor="@color/colorLightWhite"-->
+            <!--android:layout_height="wrap_content" />-->
+            <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

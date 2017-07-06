@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/layouttips"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_alignParentRight="true"
+
+        android:background="@android:color/transparent"
+        android:layout_height="80dp"
+        android:id="@+id/button_close_tips"
+        android:src="@drawable/close_button"
+
+        />
+
+</RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_margin="15dp"
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tips"
+        android:id="@+id/tips"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+
+
+
+        android:textColor="@color/colorBlack"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:layout_height="30dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:gravity="center_horizontal"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="match_parent"
+               android:id="@+id/tips1"
+               android:gravity="left"
+               android:textColor="@color/sub_text_black"
+               android:text="Drink two glasses of water after waking up – helps activate internal organs"
+               android:layout_marginLeft="10dp"
+               android:textSize="15dp"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:layout_height="30dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="2"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tips2"
+                android:textColor="@color/sub_text_black"
+                android:gravity="left"
+                android:text="Drink one glass of water 30 Minutes before meal – helps digestion"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:layout_height="30dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="3"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tips3"
+                android:textColor="@color/sub_text_black"
+                android:gravity="left"
+                android:text="Drink one glass of water before taking a bath – helps lower blood pressure"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:layout_height="30dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="4"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tips4"
+                android:textColor="@color/sub_text_black"
+
+
+                android:gravity="left"
+                android:text="Drink one glass of water before sleep – may help to avoid stroke or heart attack"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+
+        android:background="@color/line_text_black"
+        />
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textStyle="italic"-->
+
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:id="@+id/benefits"
+        android:text="Benefits of drinking water &amp; its functions in the body?"
+        android:textColor="@color/colorBlack"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits1"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="75% of brain is water"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits2"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="regulates body temperature"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits3"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="83% of body’s blood is water"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits4"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="removes body waste ,cushions bone"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits5"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="75% of muscles are water"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits6"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="helps body absorb nutrients"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits7"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="protects and cushions vital organ"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits8"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="help convert food into energy"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:id="@+id/benefits9"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="moistens oxygen for breathing"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits10"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="helps carries nutrients and oxygen to cells"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/benefits11"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="helps to maintain normal kidney function"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_height="1dp"
+
+            android:background="@color/line_text_black"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+
+        android:id="@+id/proper"
+        android:textColor="@color/colorBlack"
+        android:text="Benefits of proper hydration"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper1"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Boost your brain"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper2"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Relieves Your head ache"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/proper3"
+            android:textSize="15dp"
+        android:textColor="@color/sub_text_black"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/ic_aroow"
+        android:text="Smooth your skin"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper4"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="More Energy"
+            android:layout_height="wrap_content" />
+        <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/proper5"
+            android:textSize="15dp"
+        android:textColor="@color/sub_text_black"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@drawable/ic_aroow"
+        android:text="Modulate blood pressure"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper6"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Metabolize FAT"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper7"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Better DETOX"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper8"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Improve Your Mood"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper9"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Better Physical Performance"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper10"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="More oxygen &amp; nutrients"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper11"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Better Digestion"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper12"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Reduce Constipation"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/proper13"
+            android:textSize="15dp"
+            android:textColor="@color/sub_text_black"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_aroow"
+            android:text="Happier Joints and bones"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="italic"
+
+        android:layout_marginBottom="50dp"
+        />
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

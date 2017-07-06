@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg"
+    tools:context="com.mindbees.medicinereminder.UI.LoginActivityType">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/activity_main"
+            android:gravity="bottom"
+
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/activity_main"
+        android:weightSum="1"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".4"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@color/login_page_background"
+                android:alpha=".8"
+                android:layout_height="match_parent" />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+
+
+            android:orientation="vertical"
+        android:weightSum="3"
+
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:id="@+id/layout_fblogin"
+                android:background="@color/fb_button_blue"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="@string/login_now"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_weight=".8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+
+
+
+                            android:src="@drawable/ic_fb_button"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight=".2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:id="@+id/layout_RegisterNow"
+
+                android:background="@color/green_button"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="SIGN UP"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_or_image"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight=".6"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="@string/have_an"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/fb_button_blue"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+
+                android:id="@+id/layout_loginNow"
+                android:background="@color/register_blue"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/EditTextHeight"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="SIGN IN"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+   <!--<LinearLayout-->
+       <!--android:layout_width="wrap_content"-->
+       <!--android:layout_alignParentBottom="true"-->
+       <!--android:id="@+id/Bottomlayout"-->
+       <!--android:orientation="vertical"-->
+       <!--android:background="@android:color/transparent"-->
+       <!--android:layout_height="wrap_content">-->
+       <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+           <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+           <!--&lt;!&ndash;android:background="@color/colorPrimary"&ndash;&gt;-->
+           <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+           <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+               <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+
+               <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:minHeight="30dp"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textColor="@android:color/black"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textSize="16dp"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:text="@string/login_now"/>&ndash;&gt;-->
+
+       <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+       <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+           <!--&lt;!&ndash;android:layout_marginTop="2dp"&ndash;&gt;-->
+           <!--&lt;!&ndash;&ndash;&gt;-->
+           <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+           <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+           <!--&lt;!&ndash;android:background="@color/colorviolet">&ndash;&gt;-->
+           <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+               <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:text="@string/connect_fb"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:minHeight="30dp"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textSize="@dimen/DefaultTextsize"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textColor="@android:color/black"/>&ndash;&gt;-->
+       <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+       <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+           <!--&lt;!&ndash;android:layout_marginTop="50dp"&ndash;&gt;-->
+           <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+           <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+           <!--&lt;!&ndash;android:background="@android:color/transparent"&ndash;&gt;-->
+           <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+           <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+               <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:background="@drawable/circle"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textColor="@android:color/black"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:textSize="@dimen/DefaultTextsize"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+               <!--&lt;!&ndash;android:text="OR"&ndash;&gt;-->
+               <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+       <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+       <!--<RelativeLayout-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_marginTop="50dp"-->
+           <!--android:id="@+id/layout_RegisterNow"-->
+           <!--android:background="@color/color_darkmagenta"-->
+           <!--android:layout_height="wrap_content">-->
+           <!--<TextView-->
+               <!--android:layout_width="match_parent"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:minHeight="@dimen/Textview_height"-->
+               <!--android:text="@string/register_now"-->
+               <!--android:textColor="@android:color/black"-->
+               <!--android:textStyle="bold"-->
+               <!--android:textSize="@dimen/DefaultTextsize"-->
+               <!--android:gravity="center"-->
+               <!--/>-->
+       <!--</RelativeLayout>-->
+
+
+  <!--/ </LinearLayout>-->
+
+
+
+</RelativeLayout>

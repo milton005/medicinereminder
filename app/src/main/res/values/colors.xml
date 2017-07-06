@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary"> #a1c627</color>
+    <color name="colorPrimaryDark">#a1c627</color>
+    <color name="colorAccent">#03a9f4</color>
+    <color name="colorGreen">#388e3c</color>
+    <color name="grey">#22425a</color>
+    <color name="tips_color">#f87413</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteShade">#448aff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightAsh">#EBEBEB</color>
+    <color name="colorPrimaryLight">#82b1ff</color>
+    <color name="colorLightBlack">#536dfe</color>
+    <color name="colorLightWhite">#DFDFDF</color>
+    <color name="colorviolet">#00b0ff</color>
+    <color name="color_darkmagenta">#4fc3f7</color>
+    <color name="login_page_background"> #e5f3fb</color>
+    <color name="fb_button_blue">#3b5998</color>
+    <color name="green_button">#a1c627</color>
+    <color name="register_blue">#0090ff</color>
+    <color name="main_text_light_black"> #363e43</color>
+    <color name="field_text_black">#4e5d66</color>
+    <color name="line_text_black"> #d9e0e4</color>
+    <color name="main_page_text_blue">#3c6680</color>
+    <color name="tab_color_blue"> #0090ff</color>
+    <color name="sub_text_black"> #768e9c</color>
+    <color name="expired_orange">#E45814</color>
+    <color name="menu_bg">#00477c</color>
+    <color name="menu_text_color">#8cb5d4</color>
+    <color name="popup_background">#002f54</color>
+</resources>
